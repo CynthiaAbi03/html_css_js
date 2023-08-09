@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-sherif;
+}
+
+body {
+  height: 120vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  background-color: orange;
+  display: flex;
+  flex-direction: flex;
+  align-items: left;
+  justify-content: space-between;
+}
+header div.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+header div.title h1 {
+  margin-left: 20px;
+  color: white;
+  font-size: 2em;
+}
+header div.title div.image {
+  background-image: none;
+}
+
+div.container-body {
+  position: fixed;
+  top: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container {
+  /* display: flex; */
+  position: relative;
+  width: 600px;
+  height: 80vh;
+  border-style: solid;
+  border-width: 1px;
+  border-color: orange;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border-radius: 30px;
+}
+div.container div.titled {
+  background-color: white;
+  font-size: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  /* position: absolute; */
+
+  /* padding: 7px 20px; */
+  /*border-style: solid;
+  border-width: 3px;
+  border-color: #D8D8D8;*/
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: center; */
+
+  border-radius: 30px 30px 0px 0px;
+}
+div.container div.titled h1 {
+  color: black;
+  padding-left: 10px;
+}
+div.container div.titled div.img {
+  background-color: transparent;
+}
+div.container div.titled button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.text {
+  display: flex;
+}
+.newchatbtn {
+  margin: 0 auto;
+}
+
+.text-box{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-box > img {
+  width: 50px;
+}
+.text-box-div1{
+  display: flex;
+  margin-left: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 2;
+  padding: 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.text-box-div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.text-box > div:nth-child(1){
+  border: 1px solid  red;
+}
+
+div.container div.text p {
+  padding-top: 300px;
+  text-align: center;
+  color: black; 
+  margin: 0 auto;
+  /* padding: 300px 0; */
+  text-shadow: 2px 2px 8px black;
+}
+div.container div.popup {
+  /* position: fixed; */
+  /* height: 15vh; */
+  /* it is better to use height in pixels rather than vh in this case */
+  height: 150px;
+  width: 200px;
+  border: 1px solid orange;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  transition: transform .1s ease;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  
+}
+div.container div.popup div.box {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid black;
+  outline: none;
+  font-weight: 500;
+}
+div.container div.popup div.box input[type="text"]:focus {
+  outline: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+div.container div.popup div.box label {
+  position: absolute;
+  text-align: center;
+  top: -160%;
+  left: 0%;
+  pointer-events: none;
+}
+div.container div.popup div.buttons {
+  color: black;
+  height: 15%;
+  width: 40px;
+  display: flex;
+  padding-top: 8px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  transform: translateY(120%);
+} /*# sourceMappingURL=style4.css.map */
+
+.btn1 {
+  position: absolute;
+  bottom: -2.4rem;
+  left: 50%;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0s ease-in-out;
+  /*transform: translateX(-50%);*/
+}
+
+.btn2 {
+  position: absolute;
+  bottom: -2.4rem;
+  right: -5rem;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0s ease-in-out;
+}

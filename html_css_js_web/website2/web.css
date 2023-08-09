@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+}
+
+main {
+
+    display: flex;
+    flex-direction:  row;
+    margin-top: 245px;
+    padding: 10px;
+    gap: 70px;
+    
+
+
+
+}
+
+main .section1 {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    height: 600px;
+   
+   
+   
+    
+}
+
+main .section1 .text h2 {
+
+    margin-bottom: 30px;
+    font-size: 2.9em;
+}
+
+main .section1 .text p {
+
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+main .buttonAndText {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+
+}
+
+main .buttonAndText button {
+
+    background-color: blanchedalmond;
+    border: 1px solid transparent;
+    padding: 15px 25px;
+    font-size: 1em;
+    border-radius: 20px;
+    font-weight: bolder;
+
+}
+
+main .buttonAndText button:hover {
+
+    background-color: bisque;
+}
+
+main .buttonAndText p {
+
+    font-size: 1.2em;
+    
+}
+
+main .box {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid black;
+    padding: 62px 40px;
+    border-radius: 5px;
+    
+
+}
+
+main .box p:nth-child(2) span {
+
+    font-weight: bold;
+}
+
+main .box p:nth-child(1) {
+
+    font-size: 2em;
+
+}
+
+main .box .img1 {
+
+    position: absolute;
+    top: -20px;
+    left: -32px;
+}
+
+
+main .product-section {
+
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'space1 space2'
+    'space1 space3';
+    gap: 15px;
+    height: 600px;
+
+    
+    
+
+}
+
+
+
+main .product-section .part1{
+
+    grid-area: space1;
+    position: relative;
+
+    
+}
+
+
+main .product-section .part2 {
+
+    grid-area: space2;
+    position: relative;
+}
+
+main .product-section .part3{ 
+
+    grid-area: space3;
+    position: relative;
+
+}
+
+
+.img2 {
+    width: 270px;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+
+
+}
+
+.img3 {
+
+    width: 270px;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border: 1px solid transparent;
+    border-radius: 5px;
+   
+
+}
+
+.product-img .taging {
+
+    position: absolute;
+    bottom: 400px;
+    right: 100px;
+}
+
+.img-text {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 55px;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    
+    
+}
+
+.product-section  .img-text .type p{
+
+    font-size: 0.9em;
+}
+
+.img-text2 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 55px;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+.img-text3{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 55px;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 160px;
+    right: 270px;
+}
+
+.img-text2 .type p {
+
+    font-size: 0.9em;
+}
+
+@media(max-width:40rem){
+    main .intro{
+        flex-direction: column;
+    }
+
+    main .intro img{
+        width: 100%;
+     }
+}
+
+

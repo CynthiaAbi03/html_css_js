@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="text-center" id="texttt">
+            Enregistrement des clients
+        </div>
+
+    
+        <form action="" autocomplete="off">
+
+            <div class="row mt-3 mb-3">
+
+                <div class="col-sm-12 col-md-6 form-group">
+                    <label for="nom"> Nom du Client</label>
+                    <input type="text" name="nom" id="nom" class="form-control" >
+                </div>
+
+                <div class="col-sm-12 col-md-6 form-group">
+                   <label for="prenom"> prenom du Client</label>
+                    <input type="text" name="prenom" id="prenom" class="form-control" >
+                </div>
+
+                <div class="col-sm-12 col-md-6 form-group">
+                    <label for="age"> Age </label>
+                    <input type="number" name="age" id="age" class="form-control" >
+                </div>
+
+                <div class="col-sm-12 col-md-6 form-group">
+                    <label for="salaire"> Salaire du Client</label>
+                    <input type="number" name="salaire" id="salaire" class="form-control" >
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <button type="button" class="btn btn-primary" id="ajouter"> Ajouter </button>
+                    <button type="button" class="btn btn-dark d-none"> Modifier</button>
+                </div>
+
+            </div>
+
+
+        </form>
+
+        <table id="table" class="table table-bordered" >
+
+            <thead>
+                <th> Nom </th>
+                <th> PreNom </th>
+                <th>  Age </th>
+                <th>  Salaire </th>
+                <th>  Action </th>
+            </thead>
+            
+            <tbody>
+                <!-- <tr>
+                    <td> BadJeck </td>
+                    <td> Sebastien </td>
+                    <td> 32 </td>
+                    <td> 53000 </td>
+                    <td>
+                        <button class="btn btn-danger"> supprimer </button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+
+    </div>
+    
+
+   <!--  <script src="script.js"></script> -->
+   <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400;1,600&family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+body {
+    margin-top: 40px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+header {
+    position: fixed;
+    margin-top: 40px;
+    z-index: 1000;
+    left: 250px;
+    top: 0;
+    height: 50px;
+    right: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+   /*  border-bottom: 2px solid green; */
+}
+
+header .logo{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+header .nav-menu {
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+
+header .nav-menu li a {
+
+    color: black;
+    position: relative;
+}
+
+header .nav-menu li a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    background-color: black;
+    bottom: -5px;
+    height: 2px;
+    transition:  .3s ease-in-out;
+}
+
+header .nav-menu li:hover a::before {
+
+    width: 50%;
+}
+
+header .hamburger-icon {
+    display: none;
+
+    
+}
+
+header .hamburger-icon .bar {
+
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    
+}
+
+
+@media (max-width: 750px) {
+
+    header .nav-menu {
+
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        width: 100%;
+        transition: all ease-in-out .3s;
+    }
+
+    header .nav-menu.active {
+
+        left: 0;
+    }
+
+    header .nav-menu li a::before {
+        position: absolute;
+        content: '';
+        width: 0;
+        background-color: black;
+        bottom: -5px;
+        height: 2px;
+        transition:  .3s ease-in-out;
+    }
+    
+    header .nav-menu li:hover a::before {
+    
+        width: 50%;
+    }
+
+    header .hamburger-icon {
+
+        display: inline-block;
+        cursor: pointer;
+
+    }
+
+    header .hamburger-icon.active .bar:nth-child(1) {
+
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    header .hamburger-icon.active .bar:nth-child(2) {
+
+        opacity: 0;
+    }
+
+    header .hamburger-icon.active .bar:nth-child(3) {
+
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+
+}

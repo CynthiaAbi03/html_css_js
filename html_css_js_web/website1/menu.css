@@ -1,0 +1,105 @@
+body{
+
+    margin-top: 190px;
+    min-height: 1000px;
+}
+header {
+
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-bottom: 2px solid rgb(22, 113, 212);
+
+}
+
+header .logo {
+
+    display: flex;
+    justify-content: flex-start;
+    width: 30px;
+    height: 100%;
+    padding-bottom: 7px;
+}
+
+
+header .menu {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+
+}
+
+header .menu li a {
+    color:rgb(22, 113, 212);
+    display: inline-block;
+    font-weight: 700;
+    padding: 7px 10px;
+    transition: all ease-in-out .3s;
+}
+
+header .menu li:hover a {
+    color: rgb(75, 71, 71);
+    color: white;
+    background-color: rgb(22, 113, 212);
+}
+
+header .menu-bar {
+    display: none;
+}
+
+header .menu-bar .bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    background-color: rgb(22, 113, 212);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+@media(max-width:40rem){  /* responsive design from 0-40rem width */
+
+   
+    header .menu  {
+        position: fixed;
+        left:-100%;
+        top:60px;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        transition: all ease-in-out .3s;
+    }
+
+    header .menu.active {
+        left: 0;
+    }
+    header .menu li a {
+        display: block;
+    }
+
+    header .menu-bar{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .menu-bar.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .menu-bar.active .bar:nth-child(2) {
+        opacity: 0
+    }
+    
+    .menu-bar.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+}
