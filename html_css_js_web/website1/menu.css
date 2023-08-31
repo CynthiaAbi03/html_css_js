@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
 body{
 
     margin-top: 190px;
@@ -20,20 +27,14 @@ header {
 
 }
 
-header .logo {
-
-    display: flex;
-    justify-content: flex-start;
-    width: 30px;
-    height: 100%;
-    padding-bottom: 7px;
+header .logo img {
+    width: 40px;
 }
 
 
 header .menu {
 
     display: flex;
-    justify-content: flex-end;
     gap: 15px;
 
 }
@@ -77,13 +78,15 @@ header .menu-bar .bar {
         flex-direction: column;
         background-color: white;
         transition: all ease-in-out .3s;
+        margin: none;
     }
 
     header .menu.active {
         left: 0;
     }
     header .menu li a {
-        display: block;
+        display: inline-block;
+        cursor: pointer;
     }
 
     header .menu-bar{

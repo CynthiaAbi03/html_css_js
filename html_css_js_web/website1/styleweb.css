@@ -7,25 +7,24 @@
 }
 
 main {
-
-    margin: 0px 200px;
+    
+    max-width: 1300px;
+    margin: 0 auto;
+      
 }
 
-main .intro {
-
+main section {
     display: flex;
+    padding: 20px;
 } 
 
-.img2 {
-
+main .intro .img2 {
     object-fit: cover;
     flex: 1;
+    display: block;
 }
 
-.text {
-
-    display: flex;
-    flex-direction: column;
+main .intro .text {
     flex: 2;
     background-color:  rgba(22, 113, 212, .1);
     padding: 40px;
@@ -167,12 +166,24 @@ h5.price {
     padding: 5px 10px;
 }
 
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(22, 113, 212,1);
+    border-radius: 5px;
+}
+textarea {
+    height: 200px;
+}
+
 @media(max-width:40rem){
-    main .presentation{
+    main .intro{
         flex-direction: column;
     }
 
-    main .presentation img{
+    main .intro img{
         width: 100%;
      }
 }
