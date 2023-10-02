@@ -51,3 +51,61 @@ nav ul li:hover a::before {
 
     display: none;
 }
+
+header .menu-bar .bar {
+
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width:40rem) {
+
+    header .menu  {
+        display: flex;
+        position: fixed;
+        left:-100%;
+        top:60px;
+        width: 100%;
+        flex-direction: column;
+        background-color:  #cfdce3;;
+        transition: all ease-in-out .3s;
+        margin: none;
+        z-index: 2;
+    }
+
+    .menu-bar {
+
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    header .menu.active {
+        left: 0;
+        z-index: 2;
+    }
+    header .menu li a {
+        display: inline-block;
+        cursor: pointer;
+        background-color: #cfdce3;
+       
+        
+    }
+
+
+    .menu-bar.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .menu-bar.active .bar:nth-child(2) {
+        opacity: 0
+    }
+    
+    .menu-bar.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+
+}

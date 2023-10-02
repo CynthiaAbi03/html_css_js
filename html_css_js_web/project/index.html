@@ -9,15 +9,14 @@
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <nav>
             <img src="images/myLogo.png" class="logo" alt="logo">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>       
+            <ul class="menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>       
             </ul>
 
             <div class="menu-bar">
@@ -31,24 +30,172 @@
         <section class="section1">
 
             <div class="Presentation">
-                <p> Front End Developer</p>
-                <img src="images/leo.png" alt="">
-                <h1> Hi, I'm <span>Cynthia</span><br>Abissegue from Cameroon
-                </h1>
+                <img src="images/pic.jpeg" alt="">
+                <h1> <Span>C</Span>ynthia Abissegue</h1>
             </div>
 
-            <div class="background-img">
-                <img src="images/myPerLogo.png" alt="">
-            </div>
+            <div class="About" id="about">
+                <h1> About Me</h1>
+
+                <p> Hello! I'm currently a 4th year Computer Engineering
+                    Student at the National Advanced school of Engineering Polytech Yaoundé, Cameroon.
+                </p>
+                <p>
+                    I have a great passion for Data Science and Machine Learning. I am very curious about
+                    what's going on in the world. In my free time, i watch football games.
+                </p>
+
+                <div class="tab-titles">
+                    <ul>
+                        <li class="tab-links"><button type="button" onclick="opentab('skills')">Skills</button></li>
+                        <li class="tab-links"><button type="button" onclick="opentab('trainings')">Trainings</button></li>
+                        <li class="tab-links"><button type="button" onclick="opentab('education')">Education</button></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/Ios Apps</li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="trainings">
+                    <ul>
+                        <li><span>June 2023-August 2023</span><br>Software Coding camp <br><p class="myskills">Skills: Python for DataScience</p><br><button onclick="window.open('images/cv.pdf', '_blank')"  class="myButton" type="button"> View Certificate</button></p></li>
+                        <li><span>2023</span><br>IBM professional Data Science Certificate <br><button onclick="window.open('images/cv.pdf', '_blank')" class="myButton" type="button" > View Certificate</button></li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                            <li><span>Gce Advanced Level</span><br> 2019 Saint Benedict Catholic Bilingual College</li>
+                            <li><span>Ms Computer Engineering</span><br>2020-2025 ENSPY</li> 
+                    </ul>
+                </div>
 
         </section>
 
-        <section class="section2">
+        <section class="section2" id="portfolio">
+
+            <div class="container">
+
+                <h1 class="sub-title"> My Projects </h1>
+
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="images/capstone.jpg" alt="">
+
+                        <div class="description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus a dolore itaque non labore quidem soluta et, expedita tempora quod incidunt accusamus reprehenderit saepe explicabo. Nemo neque dolorem laborum suscipit.
+                            Ullam vero, ad sit sed porro impedit doloribus reiciendis blanditiis animi ut voluptates, saepe nostrum aut dolores amet quae aliquid neque quo iusto. Odio eaque ipsum dicta. Autem, necessitatibus atque?
+                            Eum consequuntur et accusantium unde distinctio, harum obcaecati voluptate in ratione quia possimus non quae. Non tempora possimus eos delectus, neque eaque sit doloremque repellendus blanditiis veritatis quasi hic iure.
+                            </p>
+                            <a  target="_blank" href="https://github.com/CynthiaAbi03"><img class="link" src="images/link.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/datacleaning.jpeg" alt="">
+
+                        <div class="description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus a dolore itaque non labore quidem soluta et, expedita tempora quod incidunt accusamus reprehenderit saepe explicabo. Nemo neque dolorem laborum suscipit.
+                            Ullam vero, ad sit sed porro impedit doloribus reiciendis blanditiis animi ut voluptates, saepe nostrum aut dolores amet quae aliquid neque quo iusto. Odio eaque ipsum dicta. Autem, necessitatibus atque?
+                            Eum consequuntur et accusantium unde distinctio, harum obcaecati voluptate in ratione quia possimus non quae. Non tempora possimus eos delectus, neque eaque sit doloremque repellendus blanditiis veritatis quasi hic iure.
+                            </p>
+                            <a target="_blank" href="https://github.com/CynthiaAbi03"><img class="link" src="images/link.png" alt=""></a>
+                        </div>
+
+                    </div>
+                
+                    <div class="work">
+                        <img src="images/datascience.jpg.avif" alt="">
+
+                        <div class="description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus a dolore itaque non labore quidem soluta et, expedita tempora quod incidunt accusamus reprehenderit saepe explicabo. Nemo neque dolorem laborum suscipit.
+                            Ullam vero, ad sit sed porro impedit doloribus reiciendis blanditiis animi ut voluptates, saepe nostrum aut dolores amet quae aliquid neque quo iusto. Odio eaque ipsum dicta. Autem, necessitatibus atque?
+                            Eum consequuntur et accusantium unde distinctio, harum obcaecati voluptate in ratione quia possimus non quae. Non tempora possimus eos delectus, neque eaque sit doloremque repellendus blanditiis veritatis quasi hic iure.
+                            </p>
+                            <a target="_blank" href="https://github.com/CynthiaAbi03"><img class="link" src="images/link.png" alt=""></a>
+                        </div>
+
+                    </div>
+                
+                    <div class="work">
+                        <img src="images/machinelearning.jpg" alt="">
+
+                        <div class="description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus a dolore itaque non labore quidem soluta et, expedita tempora quod incidunt accusamus reprehenderit saepe explicabo. Nemo neque dolorem laborum suscipit.
+                            Ullam vero, ad sit sed porro impedit doloribus reiciendis blanditiis animi ut voluptates, saepe nostrum aut dolores amet quae aliquid neque quo iusto. Odio eaque ipsum dicta. Autem, necessitatibus atque?
+                            Eum consequuntur et accusantium unde distinctio, harum obcaecati voluptate in ratione quia possimus non quae. Non tempora possimus eos delectus, neque eaque sit doloremque repellendus blanditiis veritatis quasi hic iure.
+                            </p>
+                            <a  target="_blank" href="https://github.com/CynthiaAbi03"><img class="link" src="images/link.png" alt=""></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="buttonview">
+                <button class="view" window.location.ref="https://github.com/CynthiaAbi03"> View more</button>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="section3" id="contact">
+            
+            <div class="container">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p><img class="imggg" src="images/paperplane.png" alt=""> abisseguecynthia@gmail.com </p>
+                    <p><img class= "imggg" src= "images/phone.png" alt="">+23767878446</p>
+
+
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=100007423277202" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                        <a href="https://www.linkedin.com/in/cynthiaabi179/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                        <a href="https://twitter.com/__xocynthia" target="_blank"><img src="images/xtwitter.png" alt=""></a>
+                        <a href="https://github.com/CynthiaAbi03" target="_blank"><img src="images/github.png" alt="github"></a>
+
+                    </div>
+
+                    <a href="images/cv.pdf" download class="view btn_download">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email" id="" required>
+                        <textarea name="Message" rows="6" id="" cols="30" placeholder="Your Message"></textarea>
+                        <button class="view btn_submit" type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
 
         </section>
     </main>
 
 
-    
+<script src="script.js"></script>    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9rYx7wYamQ6hIhkMHC3jP2hb00xqmVez8KZ76hDObfOKnoHU_yk4X09FtATTOlUETBA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
+

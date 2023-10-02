@@ -10,7 +10,10 @@
     background-color: #cfdce3;
    
 }
+html {
 
+    scroll-behavior: smooth;
+}
 main{
 
     margin: 80px 10%;
@@ -20,16 +23,20 @@ main .section1 {
     display: flex;
     height: 50vh;
     align-items: center;
+    gap: 90px;
    
     
 }
 
 .section1 .Presentation {
 
-    flex: 1;
+    
     height: 100%;
     font-size: 20px;
     margin-left: 20px;
+    
+
+    
   
 }
 
@@ -40,32 +47,358 @@ main .section1 {
 
 .section1 .Presentation img {
 
-    
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
-.section1 .Presentation p {
+.section1 .Presentation h1 {
 
-    padding: 20px 0;
+    padding: 30px 0;
 }
-.background-img{
 
-    flex: 1;
+.Presentation h1 span {
+    color: #ff004f;
+}
+
+.section1 .About {
+
+    flex: 2;
     height: 100%;
-    align-content: center;
+ 
+
+}
+
+.section1 .About h1 {
+    
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.About .tab-titles ul li {
+
+    display: inline-block;
+    margin-top: 15px;
+
+}
+
+.About .tab-titles ul li button {
+
+    border: none;
+    color: black;
+    position: relative;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.About .tab-titles ul li button::before{
+
+    position: absolute;
+    content: "";
+    width: 0;
+    background-color: #ff004f;
+    bottom: -5px;
+    height: 2px;
+    transition: .5s ease-in-out;
+}
+
+.About .tab-titles li:hover button::before {
+
+    width: 50%;
+
+}
+
+.About .tab-contents {
+
+    list-style: none;
+    margin: 10px 0;
+
+    
+}
+.About .tab-contents ul {
+
+    display: inline-block;
     
 }
 
-.background-img img {
-    width: 100%;
-    object-fit: cover;
-    margin-top: 100px;
+.About .tab-contents ul li {
+
+    margin-bottom: 10px;
+}
+
+.About .tab-contents ul li span {
+
+    color:#b54769 ;
+    font-size: 18px;
+    
+}
+
+.myskills {
+
+    display: inline-block;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.myButton {
+   
+    border: none;
+    border-radius: 5px; 
+    padding: 10px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+   
 
 }
 
+.myButton:hover {
+
+    color: white;
+    background-color: #b54769;
+    
+}
+.About .tab-contents {
+
+    display: none;
+}
+
+.About .tab-contents.active-tab{
+
+    display: block;
+}
 
 
+ .section2 .container .sub-title {
+
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.section2 .container .work-list {
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap:40px;
+    column-gap: 20px;
+    margin-top: 50px;
+
+}
+
+.work {
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.work img {
+
+    border-radius: 10px;
+    height: 600px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.description {
+
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.description p {
+
+    color: white;
+    background-color: transparent;
+}
+.description a {
+
+    text-decoration: none;
+    background-color: transparent;
+    
+   
+}
+.description .link {
+
+    width: 60px;
+    height: 60px;
+    background: none;
+    margin-top: 20px;
+
+}
+
+.description .link:hover {
+
+    filter: opacity(0.7) drop-shadow(0 0 white);
+}
+
+
+.work:hover img{
+
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.work:hover .description {
+
+    height: 100%;
+    transition: height 0.5s;
+}
+
+.buttonview {
+
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view {
+    
+    border: none;
+    border-radius: 6px; 
+    padding: 12px 30px;
+    border: 1px solid #ff004f;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.view:hover {
+
+    color: white;
+    background-color: #b54769;
+    transition: background-color 0.5s ease;
+    
+}
+
+.section3 .container {
+
+    display: flex;
+    margin-top: 40px;
+}
+.container .contact-left  {
+   
+    flex-basis: 35%;
+}
+
+.container .contact-left p img{
+
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons {
+
+    margin-top: 30px;
+}
+
+.social-icons a {
+
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons  img {
+
+    height: 30px;
+    width: 30px;
+    color: transparent;
+}
+
+
+.view.btn_download {
+
+    margin-top: 30px;
+    display: inline-block;
+    background: #ff004f;
+    color: white;
+    font-size: 18px;
+
+   
+
+}
+.container .contact-right{
+
+    flex-basis: 60%;
+    
+}
+
+.contact-right .form {
+
+    width: 100%;
+
+}
+
+form input, form textarea {
+
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ced3d9 ;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .view.btn_submit {
+
+    background: #ff004f;
+    color: white;
+    padding: 14px 60px;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+@media(max-width:40rem){
+   
+    .section1  {
+
+        flex-direction: column;
+    }
+
+   
+    .section3 .container{
+
+        flex-direction: column;
+    }
+
+    .view.btn_download  {
+
+        margin-bottom: 40px;
+    }
+
+    .tab-links {
+
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+}
